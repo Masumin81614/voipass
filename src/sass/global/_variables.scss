@@ -1,0 +1,31 @@
+// color
+$text-color: #4b5861;
+$accent-text-red: #e46e87;
+$accent-text-blue: #4a83ae;
+$white: #fff;
+
+$main-gradation: liner-gradient(90deg, rgb(237, 244, 253) 0%, rgb(252, 241, 243) 100%);
+$btn-blue-color: liner-gradient(90deg, rgb(165, 198, 211), rgb(99, 190, 207));
+$btn-pink-color: liner-gradient(90deg, rgb(234, 198, 203), rgb(231, 151, 168));
+
+// font
+$font-face-en: "athelas", serif;
+$font-face-ja: "Zen Kaku Gothic Antique", sans-serif;
+$font-face-mincho: "Shippori Mincho", serif;
+
+// inner
+
+// breakpoint
+$breakpoints: (
+  //キー　　値
+  //767px以下（スマホ）用の表示
+  "sp-small": "screen and (max-width: 320px)",
+  "sp-middle": "screen and (max-width: 375px)",
+  "sp-large": "screen and (max-width: 767px)",
+  //タブレット用の表示
+  "tb-small": "screen and (min-width: 768px)",
+  "tb-middle": "screen and (min-width: 1024px)",
+  //PC用の表示
+  "pc-small": "screen and (min-width: 1280px)",
+  "pc-middle": "screen and (min-width: 1920px)"
+) !default;
