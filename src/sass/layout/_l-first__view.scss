@@ -1,0 +1,8 @@
+@use "../global" as *;
+
+.l-first__view {
+  background: url(../img/bg_top-sp.webp) no-repeat center center / cover;
+  @include mq(tb-middle) {
+    background: url(../img/bg_top.webp) no-repeat center center / cover;
+  }
+}

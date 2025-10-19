@@ -1,0 +1,35 @@
+@use "../global" as *;
+
+.l-header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+.l-header__inner {
+  padding-inline: 28px;
+  padding-top: 20px;
+}
+.l-header__nav {
+  //spの場合非表示
+  display: none;
+
+  @include mq(tb-middle) {
+    display: block;
+  }
+}
+.l-header__logo {
+  display: block;
+  width: rclamp(135, 270, 375, 768);
+  img {
+    width: 100%;
+  }
+}
+
+.l-header__btnBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

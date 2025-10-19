@@ -4,13 +4,13 @@ $accent-text-red: #e46e87;
 $accent-text-blue: #4a83ae;
 $white: #fff;
 
-$main-gradation: liner-gradient(90deg, rgb(237, 244, 253) 0%, rgb(252, 241, 243) 100%);
-$btn-blue-color: liner-gradient(90deg, rgb(165, 198, 211), rgb(99, 190, 207));
-$btn-pink-color: liner-gradient(90deg, rgb(234, 198, 203), rgb(231, 151, 168));
+$main-gradation: linear-gradient(90deg, rgb(237, 244, 253) 0%, rgb(252, 241, 243) 100%);
+$btn-blue-color: linear-gradient(90deg, rgb(165, 198, 211), rgb(99, 190, 207));
+$btn-pink-color: linear-gradient(90deg, rgb(234, 198, 203), rgb(231, 151, 168));
 
 // font
 $font-face-en: "athelas", serif;
-$font-face-ja: "Zen Kaku Gothic Antique", sans-serif;
+$font-face-ja: "Zen Kaku Gothic New", sans-serif;
 $font-face-mincho: "Shippori Mincho", serif;
 
 // inner

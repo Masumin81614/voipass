@@ -1,0 +1,9 @@
+@use "../global" as *;
+
+.c-drawer__btn {
+  color: $accent-text-blue;
+  background: $white;
+  font-size: rclamp(18, 25, 375, 1920);
+  padding: 18px 33px;
+  text-align: center;
+}
