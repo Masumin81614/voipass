@@ -11,18 +11,44 @@
 .l-header__inner {
   padding-inline: 28px;
   padding-top: 20px;
+
+  @include mq(tb-middle) {
+    display: flex;
+    padding-inline: rclamp(55, 100, 1024, 1920);
+    gap: rclamp(40, 100, 1024, 1920);
+    align-items: center;
+  }
 }
 .l-header__nav {
-  //spの場合非表示
   display: none;
 
   @include mq(tb-middle) {
-    display: block;
+    display: flex;
+    gap: rclamp(121, 300, 1024, 1920);
+    align-items: center;
   }
 }
+
+.l-header__lists {
+  display: flex;
+  gap: rclamp(24, 60, 1024, 1920);
+}
+
+.l-header__list {
+  color: $accent-text-blue;
+  font-weight: bold;
+  font-size: rclamp(10, 25, 1024, 1920);
+  font-family: $font-face-ja;
+  flex-shrink: 0;
+}
+
 .l-header__logo {
   display: block;
-  width: rclamp(135, 270, 375, 768);
+  width: rclamp(135, 270, 375, 1024);
+
+  @include mq(tb-middle) {
+    width: rclamp(108, 270, 769, 1920);
+  }
   img {
     width: 100%;
   }
@@ -32,4 +58,9 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  @include mq(tb-middle) {
+    flex-direction: row;
+    gap: rclamp(4.8, 12, 1024, 1920);
+  }
 }

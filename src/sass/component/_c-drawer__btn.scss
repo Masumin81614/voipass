@@ -3,7 +3,14 @@
 .c-drawer__btn {
   color: $accent-text-blue;
   background: $white;
-  font-size: rclamp(18, 25, 375, 1920);
+  font-size: rclamp(9, 18, 375, 768);
   padding: 18px 33px;
   text-align: center;
+  font-weight: bold;
+
+  @include mq(tb-middle) {
+    padding-inline: rclamp(14, 33, 1024, 1920);
+    padding-block: rclamp(7.2, 18, 1024, 1920);
+    font-size: rclamp(10, 25, 1024, 1920);
+  }
 }
