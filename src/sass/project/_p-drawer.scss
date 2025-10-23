@@ -12,13 +12,17 @@
   align-items: center;
   background: transparent;
   border: none;
-  gap: rclamp(5, 12, 375, 1024);
+  gap: rclamp(5, 12, 525, 1023);
+
+  .p-drawer__title2 {
+    display: none;
+  }
 
   &.js-show {
     .p-drawer__icon--bar:nth-of-type(1) {
       rotate: 45deg;
       translate: 0 7.5px;
-      background: #fff;
+      background: $accent-text-blue;
     }
     .p-drawer__icon--bar:nth-of-type(2) {
       display: none;
@@ -26,7 +30,13 @@
     .p-drawer__icon--bar:nth-of-type(3) {
       rotate: -45deg;
       translate: 0 0.5px;
-      background: #fff;
+      background: $accent-text-blue;
+    }
+    .p-drawer__title {
+      display: none;
+    }
+    .p-drawer__title2 {
+      display: block;
     }
   }
   @include mq(tb-middle) {
@@ -35,17 +45,18 @@
 }
 
 .p-drawer__icon--bar {
-  width: rclamp(20, 40, 375, 1024);
+  width: rclamp(20, 56, 375, 1023);
   height: 2px;
   background-color: $accent-text-blue;
   transition: all 0.5s ease;
 }
 
-.p-drawer__title {
+.p-drawer__title,
+.p-drawer__title2 {
   color: $accent-text-blue;
   font-weight: bold;
   letter-spacing: 2px;
-  font-size: rclamp(12, 14, 375, 1024);
+  font-size: rclamp(12, 20, 375, 1023);
 }
 
 .p-drawer {
@@ -53,7 +64,7 @@
   z-index: 101;
   top: 0;
   right: 0;
-  width: 100%;
+  width: rclamp(272.5, 763, 375, 1023);
   height: 100vh;
   height: 100svh;
   overflow-y: scroll;
@@ -69,20 +80,20 @@
   height: 100vh;
   padding-block: 88px 40px;
   padding-inline: 34px;
-  background: $accent-text-blue;
-}
-.p-drawer__list {
+  background: #d9e8f3;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+.p-drawer__list {
   row-gap: 32px;
   margin-bottom: 40px;
-  color: $white;
+  color: $accent-text-blue;
 
   a {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 400;
+    font-family: $font-face-ja;
+    color: $accent-text-blue;
+    font-size: rclamp(15, 40, 375, 1023);
+    font-weight: bold;
     line-height: normal;
   }
 }

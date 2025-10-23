@@ -3,8 +3,9 @@
 .c-drawer__btn {
   color: $accent-text-blue;
   background: $white;
-  font-size: rclamp(9, 18, 375, 768);
-  padding: 18px 33px;
+  font-size: rclamp(18, 30, 375, 768);
+  padding-block: rclamp(13, 26, 375, 1023);
+  padding-inline: rclamp(45, 90, 375, 1023);
   text-align: center;
   font-weight: bold;
 
