@@ -10,12 +10,11 @@ document.addEventListener("DOMContentLoaded", () => {
   let isMenuOpenAtBreakpoint = false;
 
   const mainContent = document.querySelector(".p-fv"); // p-fv要素を取得
-  const paddingOffset = 10; // 余裕の10px
 
   // p-fv要素が存在するか確認
   if (mainContent) {
     // 既に取得済みの headerHeight を使って padding-top を設定
-    mainContent.style.paddingTop = headerHeight + paddingOffset + "px";
+    mainContent.style.paddingTop = headerHeight + "px";
   }
 
   //メニューを開くアニメーション
