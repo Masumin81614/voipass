@@ -14,6 +14,7 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_right" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.min.css" />
     <script>
       (function (d) {
@@ -73,6 +74,7 @@
         <span class="p-drawer__icon--bar"></span>
         <span class="p-drawer__icon--bar"></span>
         <span class="p-drawer__title">MENU</span>
+        <span class="p-drawer__title2">CLOSE</span>
       </button>
 
       <div class="p-drawer">
@@ -93,7 +95,7 @@
         <div class="p-fv__inner">
           <div class="p-fv__group">
             <div class="p-fv__heading">
-              <p class="p-fv__head"><span class="fv__head--title1">未経験</span>からでもたった <span class="fv__head--title2">1</span>日で</p>
+              <p class="p-fv__head"><span class="fv__head--title1">未経験</span>からでも <br class="u-hidden-pc" />たった <span class="fv__head--title2">1</span>日で</p>
               <p class="p-fv__head">
                 <span class="fv__head--title3"
                   >あなたの声が <br class="u-hidden-pc" />
@@ -140,10 +142,10 @@
     <div class="l-wrapper">
       <section id="result" class="p-result">
         <div class="p-result__inner">
-          <h2 class="p-heading">
-            VOICE
-            <span class="p-heading__sub">ボイパス参加者の実績</span>
-          </h2>
+          <div class="c-heading">
+            <h2 class="c-heading__main grad-heading">VOICE</h2>
+            <p class="c-heading__sub">ボイパス参加者の実績</p>
+          </div>
           <div class="p-result__slider">
             <div class="p-result__slider--inner">
               <div class="result__swiper--container">
@@ -184,43 +186,49 @@
                       <p class="card__swiper--name">（A・Yさん　XX歳）</p>
                     </div>
                     <!-- slider end -->
+                    <!-- slider start -->
+                    <div class="swiper-slide card__swiper-slide">
+                      <div class="card__swiper--image"><img src="./img/img_thumbnail.webp" alt="サムネイル" /></div>
+                      <h3 class="card__swiper--heading">見出しが入ります見出しが入ります見出しが入ります</h3>
+                      <p class="card__swiper--name">（A・Yさん　XX歳）</p>
+                    </div>
+                    <!-- slider end -->
+                    <!-- slider start -->
+                    <div class="swiper-slide card__swiper-slide">
+                      <div class="card__swiper--image"><img src="./img/img_thumbnail.webp" alt="サムネイル" /></div>
+                      <h3 class="card__swiper--heading">見出しが入ります見出しが入ります見出しが入ります</h3>
+                      <p class="card__swiper--name">（A・Yさん　XX歳）</p>
+                    </div>
+                    <!-- slider end -->
+                    <!-- slider start -->
+                    <div class="swiper-slide card__swiper-slide">
+                      <div class="card__swiper--image"><img src="./img/img_thumbnail.webp" alt="サムネイル" /></div>
+                      <h3 class="card__swiper--heading">見出しが入ります見出しが入ります見出しが入ります</h3>
+                      <p class="card__swiper--name">（A・Yさん　XX歳）</p>
+                    </div>
+                    <!-- slider end -->
                   </div>
                 </div>
                 <div class="card__swiper-bottom">
-                  <div class="swiper-button-prev">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                      <circle cx="20" cy="20" r="20" transform="rotate(-180 20 20)" fill="black" />
-                      <path
-                        d="M7.29289 19.2929C6.90237 19.6834 6.90237 20.3166 7.29289 20.7071L13.6569 27.0711C14.0474 27.4616 14.6805 27.4616 15.0711 27.0711C15.4616 26.6805 15.4616 26.0474 15.0711 25.6569L9.41421 20L15.0711 14.3431C15.4616 13.9526 15.4616 13.3195 15.0711 12.9289C14.6805 12.5384 14.0474 12.5384 13.6569 12.9289L7.29289 19.2929ZM32 19L8 19V21L32 21V19Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </div>
                   <div class="swiper-pagination"></div>
-                  <div class="swiper-button-next">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                      <circle cx="20" cy="20" r="20" fill="black" />
-                      <path
-                        d="M32.7071 20.7071C33.0976 20.3166 33.0976 19.6834 32.7071 19.2929L26.3431 12.9289C25.9526 12.5384 25.3195 12.5384 24.9289 12.9289C24.5384 13.3195 24.5384 13.9526 24.9289 14.3431L30.5858 20L24.9289 25.6569C24.5384 26.0474 24.5384 26.6805 24.9289 27.0711C25.3195 27.4616 25.9526 27.4616 26.3431 27.0711L32.7071 20.7071ZM8 21H32V19H8V21Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </div>
                 </div>
               </div>
-              <div class="p-result__btn">
-                <a href="" class="c-button pink-btn">実績・受講生の声一覧を見る<span class="material-symbols-outlined"> </span></a>
-              </div>
             </div>
+          </div>
+          <div class="p-result__btn">
+            <a href="" class="c-button pink-btn"
+              >実績・受講生の声 <br class="u-hidden-pc" />
+              一覧を見る<span class="material-symbols-outlined"> </span
+            ></a>
           </div>
         </div>
       </section>
       <section id="about" class="p-about">
         <div class="p-about__inner">
-          <h2 class="p-heading white-heading">
-            ABOUT
-            <span class="p-heading__sub">ボイパスとは</span>
-          </h2>
+          <div class="c-heading">
+            <h2 class="c-heading__main white-heading">ABOUT</h2>
+            <p class="c-heading__sub">ボイパスとは</p>
+          </div>
           <div class="p-about__contents">
             <div class="p-about__image">
               <img src="./img/img_about.webp" alt="声を収録する女性" />
@@ -252,10 +260,10 @@
       </section>
       <section id="reason" class="p-reason">
         <div class="p-reason__inner">
-          <h2 class="p-heading">
-            REASON
-            <span class="p-heading__sub">ボイパスが選ばれる4つの理由</span>
-          </h2>
+          <div class="c-heading">
+            <h2 class="c-heading__main grad-heading">REASON</h2>
+            <p class="c-heading__sub">ボイパスが選ばれる4つの理由</p>
+          </div>
           <ul class="p-reason__itemBox">
             <li class="p-reason__item">
               <div class="p-reason__item--image"><img src="./img/img_reason1.webp" alt="家庭スタジオ" /></div>
@@ -319,10 +327,10 @@
       </section>
       <section id="cast" class="p-cast">
         <div class="p-cast__inner">
-          <h2 class="p-heading white-text">
-            ORGANIZER
-            <span class="p-heading__sub">主催者紹介</span>
-          </h2>
+          <div class="c-heading">
+            <h2 class="c-heading__main white-heading">ORGANIZER</h2>
+            <p class="c-heading__sub">主催者紹介</p>
+          </div>
           <div class="p-cast__itemBox">
             <div class="p-cast__image"><img src="./img/img_ryu.webp" alt="ボイパス主催者りゅう" /></div>
             <h3 class="p-cast__name u-hidden-pc">
@@ -344,10 +352,10 @@
       </section>
       <section id="instruction" class="p-instruction">
         <div class="p-instruction__inner">
-          <h2 class="p-heading white-heading">
-            INSTRUCTORS
-            <span class="p-heading__sub">講師紹介</span>
-          </h2>
+          <div class="c-heading">
+            <h2 class="c-heading__main white-heading">INSTRUCTORS</h2>
+            <p class="c-heading__sub">講師紹介</p>
+          </div>
           <div class="p-instruction__itemBox">
             <div class="p-instruction__item">
               <div class="p-instruction__image"><img src="./img/img_enoki.webp" alt="榎ちひろ" /></div>
@@ -368,9 +376,9 @@
       </section>
       <section id="vision" class="p-vision">
         <div class="p-vision__inner">
-          <h2 class="p-heading">
+          <h2 class="c-heading__main grad-heading">
             VISION
-            <span class="p-heading__sub">ボイパスの理念</span>
+            <span class="c-heading__sub">ボイパスの理念</span>
           </h2>
           <div class="p-vision__itemBox">
             <div class="p-vision__image"><img src="./img/img_vision.webp" alt="笑顔の女性" /></div>
@@ -385,10 +393,10 @@
       </section>
       <section id="company" class="p-company">
         <div class="p-company__inner">
-          <h2 class="p-heading white-text">
-            COMPANY
-            <span class="p-heading__sub">会社概要</span>
-          </h2>
+          <div class="c-heading">
+            <h2 class="c-heading__main grad-heading">COMPANY</h2>
+            <p class="c-heading__sub">会社概要</p>
+          </div>
           <div class="p-company__itemBox">
             <div class="p-company__image"><img src="./img/img_company.webp" alt="オフィス" /></div>
             <dl class="p-company__detail">
@@ -461,7 +469,9 @@
         </div>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/header-js.js"></script>
+    <script src="./js/swiper.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>

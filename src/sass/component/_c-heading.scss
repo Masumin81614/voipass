@@ -1,0 +1,44 @@
+@use "../global" as *;
+
+.c-heading {
+  position: relative;
+}
+
+.c-heading__main {
+  font-family: $font-face-en;
+  line-height: 2;
+  letter-spacing: 0.05em;
+  font-size: rclamp(83, 227, 375, 1023);
+  text-align: center;
+  font-weight: 400;
+
+  @include mq(tb-middle) {
+    font-size: rclamp(101, 189, 1024, 1920);
+  }
+}
+
+.c-heading__sub {
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: $font-face-mincho;
+  line-height: 1.2;
+  letter-spacing: 0.01;
+  font-size: rclamp(23, 61, 375, 1023);
+  color: #4b5861;
+
+  @include mq(tb-middle) {
+    font-size: rclamp(27, 50, 375, 1920);
+  }
+}
+
+.white-heading {
+  color: #fff;
+}
+.grad-heading {
+  background: linear-gradient(180deg, rgb(237, 244, 253) 0%, rgb(252, 241, 243) 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
