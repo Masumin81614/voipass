@@ -25,7 +25,6 @@
   @include mq(tb-middle) {
     display: flex;
     gap: rclamp(121, 300, 1024, 1920);
-    align-items: center;
     margin-top: rclamp(3, 13, 1024, 1920);
   }
 }

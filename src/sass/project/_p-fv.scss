@@ -13,7 +13,6 @@
     padding-top: 0;
     flex-direction: row;
     gap: rclamp(36, 64, 1024, 1920);
-    align-items: flex-end;
   }
 }
 
@@ -117,9 +116,9 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: rclamp(15, 22, 375, 1023);
   position: absolute;
-  bottom: 0;
+  bottom: rclamp(13, 37, 375, 1023);
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
@@ -162,8 +161,4 @@
     width: rclamp(300, 621, 1024, 1920);
     margin-top: 0;
   }
-}
-
-.p-fv__btn {
-  margin-top: 12px;
 }
