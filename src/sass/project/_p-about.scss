@@ -1,0 +1,111 @@
+@use "../global" as *;
+
+.p-about {
+  margin-top: rclamp(41, 111, 375, 1023);
+  background: linear-gradient(to bottom, rgba(237, 244, 253, 1) 0%, rgba(252, 241, 243, 1) 100%);
+
+  @include mq(tb-middle) {
+    margin-top: rclamp(50, 94, 1024, 1920);
+  }
+}
+
+.p-about__inner {
+  padding-inline: rclamp(29, 79, 375, 1023);
+  padding-bottom: rclamp(54, 146, 375, 1023);
+
+  @include mq(tb-middle) {
+    padding-inline: rclamp(136, 255, 1024, 1920);
+    padding-bottom: rclamp(62, 117, 1024, 1920);
+    padding-top: rclamp(46, 87, 1024, 1920);
+  }
+}
+
+.about-heading {
+  font-size: rclamp(83, 227, 375, 1023);
+
+  @include mq(tb-middle) {
+    font-size: rclamp(101, 189, 1024, 1920);
+  }
+}
+
+.p-about__contents {
+  @include mq(tb-middle) {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: rclamp(67, 125, 1024, 1920);
+  }
+}
+
+.p-about__image {
+  max-width: rclamp(316, 862, 375, 1023);
+  margin-inline: auto;
+
+  @include mq(tb-middle) {
+    max-width: rclamp(373, 700, 1024, 1920);
+    margin-inline: 0;
+    flex-shrink: 0;
+  }
+}
+
+.p-about__textBox {
+}
+
+.p-about__text,
+.about__list--text {
+  font-family: $font-face-ja;
+  font-size: rclamp(13, 37, 375, 1023);
+  line-height: 2;
+  letter-spacing: 0.05px;
+
+  @include mq(tb-middle) {
+    font-size: rclamp(13, 25, 1024, 1920);
+  }
+}
+
+.p-about__text {
+  .accent-color {
+    font-weight: bold;
+  }
+}
+
+.p-about__listbox {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: rclamp(38, 104, 375, 1920);
+
+  @include mq(tb-middle) {
+    margin-top: rclamp(36, 67, 1024, 1920);
+  }
+}
+
+.p-about__list {
+  display: flex;
+  gap: rclamp(13, 30, 375, 1023);
+  align-items: center;
+
+  @include mq(tb-middle) {
+    gap: rclamp(13, 25, 1024, 1920);
+  }
+
+  .fa-circle-check {
+    color: #ecbcc5;
+
+    @include mq(tb-middle) {
+      font-size: rclamp(17, 31, 1024, 1920);
+    }
+  }
+}
+
+.about__list--text {
+  font-weight: 500;
+}
+
+.p-about__text--last {
+  margin-top: rclamp(35, 95, 375, 1023);
+
+  @include mq(tb-middle) {
+    margin-top: rclamp(33, 62, 1024, 1920);
+    font-size: rclamp(13, 25, 1024, 1920);
+  }
+}

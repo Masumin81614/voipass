@@ -1,0 +1,29 @@
+@use "../global" as *;
+
+.vision-heading {
+  font-size: rclamp(80, 219, 375, 1023);
+
+  @include mq(tb-middle) {
+    font-size: rclamp(101, 189, 1024, 1920);
+  }
+}
+
+.p-vision__itemBox {
+  margin-top: rclamp(36, 98, 375, 1023);
+
+  @include mq(tb-middle) {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: rclamp(53, 100, 1024, 1920);
+  }
+}
+
+.p-vision__text {
+  margin-top: rclamp(19, 53, 375, 1023);
+  font-size: rclamp(18, 48, 375, 1023);
+  line-height: 2;
+
+  @include mq(tb-middle) {
+    font-size: rclamp(20, 37, 1024, 1920);
+  }
+}

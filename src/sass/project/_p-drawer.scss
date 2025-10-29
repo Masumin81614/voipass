@@ -3,8 +3,8 @@
 .p-drawer__icon {
   position: fixed;
   z-index: 102;
-  top: 17px;
-  right: 20px;
+  top: rclamp(21, 58, 375, 1023);
+  right: rclamp(35, 95, 375, 1023);
   width: 60px;
   height: 60px;
   display: flex;

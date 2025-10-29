@@ -1,0 +1,77 @@
+@use "../global" as *;
+
+.p-cta__item {
+  padding-top: rclamp(48, 130, 375, 1023);
+  padding-bottom: rclamp(35, 95, 375, 1023);
+  text-align: center;
+}
+
+.p-cta__itemBox {
+  display: flex;
+  flex-direction: column;
+
+  @include mq(tb-middle) {
+    flex-direction: row;
+  }
+}
+
+.p-cta__item {
+  flex: 1;
+}
+
+.cta--contact,
+.cta--cast {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.cta--contact {
+  background-image: url(../img/bg_footer-sp1.webp);
+}
+
+.cta--cast {
+  background-image: url(../img/bg_footer-sp2.webp);
+}
+
+.p-cta__title {
+  font-size: rclamp(21, 58, 375, 1023);
+
+  @include mq(tb-middle) {
+    font-size: rclamp(21, 40, 1024, 1920);
+  }
+}
+
+.p-cta__text {
+  margin-top: rclamp(26, 70, 375, 1023);
+  font-size: rclamp(16, 44, 375, 1023);
+
+  @include mq(tb-middle) {
+    font-size: rclamp(16, 30, 1024, 1920);
+    margin-top: rclamp(27, 50, 375, 1920);
+    min-height: rclamp(71, 133, 375, 1920);
+  }
+}
+
+.p-cta__btn {
+  margin-top: rclamp(30, 82, 375, 1023);
+  border: 2px solid $text-color;
+  max-width: rclamp(261, 712, 375, 1023);
+  background: $white;
+  padding-block: rclamp(19, 51, 375, 1023);
+  padding-inline: rclamp(21, 58, 375, 1023);
+  margin-inline: auto;
+
+  @include mq(tb-middle) {
+    margin-top: rclamp(20, 50, 1024, 1920);
+  }
+
+  a {
+    font-size: rclamp(16, 44, 375, 1023);
+    font-weight: 500;
+    display: flex;
+    gap: rclamp(17, 47, 375, 1023);
+    justify-content: center;
+    align-items: center;
+  }
+}

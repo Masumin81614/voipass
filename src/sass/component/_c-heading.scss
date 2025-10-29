@@ -6,15 +6,10 @@
 
 .c-heading__main {
   font-family: $font-face-en;
-  line-height: 2;
+  line-height: 1;
   letter-spacing: 0.05em;
-  font-size: rclamp(83, 227, 375, 1023);
   text-align: center;
   font-weight: 400;
-
-  @include mq(tb-middle) {
-    font-size: rclamp(101, 189, 1024, 1920);
-  }
 }
 
 .c-heading__sub {

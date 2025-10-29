@@ -40,6 +40,9 @@
   font-weight: 500;
   text-align: center;
   padding-bottom: rclamp(34, 95, 375, 1023);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @include mq(tb-middle) {
     font-size: rclamp(40, 72, 1024, 1920);
@@ -156,9 +159,35 @@
   position: relative;
   z-index: 1;
   margin-top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
 
   @include mq(tb-middle) {
     width: rclamp(300, 621, 1024, 1920);
     margin-top: 0;
+    left: auto;
+    transform: none;
+  }
+}
+
+.p-fv__btn {
+  max-width: 340px;
+  width: 100%;
+  margin-inline: auto;
+  border-radius: 34px;
+
+  &:has(.green-btn) {
+    background: linear-gradient(90deg, rgba(103, 176, 205, 1) 0%, rgba(159, 208, 223, 1) 100%);
+  }
+
+  &:has(.pink-btn) {
+    background: linear-gradient(90deg, rgba(242, 154, 185, 1) 0%, rgba(234, 185, 205, 1) 100%);
+  }
+  @include mq(tb-middle) {
+    border-radius: 64px;
+  }
+
+  @include mq(tb-middle) {
+    max-width: rclamp(380, 713, 1024, 1920);
   }
 }

@@ -1,0 +1,168 @@
+@use "../global" as *;
+
+.voice__lead {
+  padding-bottom: rclamp(51, 139, 375, 1023);
+}
+
+.p-voice__detail--inner {
+  padding-top: rclamp(65, 178, 375, 1023);
+
+  @include mq(tb-middle) {
+    padding-inline: rclamp(99, 185, 1024, 1920);
+  }
+}
+
+.p-voice__detail--area {
+  margin-top: rclamp(58, 158, 375, 1023);
+  background: $main-gradation;
+  padding-top: rclamp(36, 98, 375, 1023);
+  padding-bottom: rclamp(38, 102, 375, 1023);
+
+  @include mq(tb-middle) {
+    margin-top: rclamp(58, 108, 1024, 1920);
+  }
+}
+
+.p-voice__detail--heading {
+  font-size: rclamp(27, 73, 375, 1023);
+  font-weight: 500;
+  text-align: center;
+
+  @include mq(tb-middle) {
+    font-size: rclamp(27, 50, 1024, 1920);
+    font-weight: 400;
+  }
+}
+
+.voice__contents {
+  padding-inline: rclamp(29, 79, 375, 1023);
+  display: flex;
+  flex-direction: column;
+
+  @include mq(tb-middle) {
+    gap: rclamp(36, 67, 1024, 1920);
+  }
+}
+
+.p-voice__detail--thumb {
+  padding-inline: rclamp(14, 38, 375, 1023);
+  margin-top: rclamp(39, 107, 375, 1023);
+  display: flex;
+  flex-direction: column;
+
+  @include mq(tb-middle) {
+    flex-direction: row;
+    padding-inline: 0;
+  }
+}
+
+.p-voice__detail--image {
+  box-shadow: 0px 0px 15px -5px #777777;
+}
+
+.voice__personal {
+  max-width: rclamp(179, 490, 375, 1023);
+  margin-inline: auto;
+  margin-top: rclamp(25, 67, 375, 1023);
+  margin-bottom: rclamp(28, 77, 375, 1023);
+}
+
+.p-voice__detail--name,
+.p-voice__detail--job {
+  font-size: rclamp(21, 58, 375, 1023);
+  font-weight: 400;
+
+  @include mq(tb-middle) {
+    font-size: rclamp(21, 40, 1024, 1920);
+  }
+}
+
+.voice__post--group {
+  padding-top: rclamp(48, 122, 375, 1023);
+  padding-inline: rclamp(11, 29, 375, 1023);
+  padding-bottom: rclamp(63, 172, 375, 1023);
+}
+.voice__post--heading {
+  font-size: rclamp(21, 58, 375, 1023);
+  padding-block: rclamp(18, 48, 375, 1023);
+  padding-left: rclamp(16, 44, 375, 1023);
+  background: #f5f2f3;
+
+  @include mq(tb-middle) {
+    font-size: rclamp(21, 40, 1024, 1920);
+    padding-block: rclamp(19, 35, 1024, 1920);
+    padding-left: rclamp(39, 74, 1024, 1920);
+  }
+}
+
+.voice__post--text {
+  font-size: rclamp(16, 44, 375, 1023);
+  padding-top: rclamp(15, 41, 375, 1023);
+  padding-bottom: rclamp(26, 70, 375, 1023);
+
+  @include mq(tb-middle) {
+    font-size: rclamp(16, 30, 1024, 1920);
+    padding-top: rclamp(25, 46, 1024, 1920);
+    padding-bottom: rclamp(26, 48, 1024, 1920);
+    padding-inline: rclamp(37, 70, 1024, 1920);
+  }
+}
+
+.voice__lead__inner {
+  padding-inline: rclamp(10, 26, 375, 1023);
+
+  @include mq(tb-middle) {
+    padding-inline: rclamp(54, 102, 1024, 1920);
+  }
+}
+
+.voice__lead--box {
+  padding-top: calc(rclamp(43, 117, 375, 1023) - 10px);
+  padding-inline: calc(rclamp(19, 53, 375, 1023) - 10px);
+  padding-bottom: calc(rclamp(37, 101, 375, 1023) - 10px);
+
+  @include mq(tb-middle) {
+    padding-top: calc(rclamp(62, 116, 1024, 1920) - 10px);
+    padding-inline: calc(rclamp(90, 168, 1024, 1920) - 10px);
+    padding-bottom: calc(rclamp(49, 92, 1024, 1920) - 10px);
+  }
+}
+
+.voice__lead--heading {
+  font-size: rclamp(21, 58, 375, 1023);
+  font-weight: 400;
+  text-align: center;
+}
+
+.voice__lead--textBox {
+  padding-top: rclamp(47, 129, 375, 1023);
+  padding-bottom: rclamp(35, 95, 375, 1023);
+}
+
+.voice__lead--text {
+  font-size: rclamp(16, 44, 375, 1023);
+
+  @include mq(tb-middle) {
+    font-size: rclamp(16, 30, 1024, 1920);
+  }
+
+  & + & {
+    margin-top: rclamp(45, 123, 375, 1023);
+
+    @include mq(tb-middle) {
+      margin-top: rclamp(32, 60, 1024, 1920);
+    }
+  }
+}
+
+.p-voice__detail--btn {
+  .c-button {
+    &::after {
+      right: rclamp(5, 15, 375, 1023);
+
+      @include mq(tb-middle) {
+        right: rclamp(24, 63, 1024, 1920);
+      }
+    }
+  }
+}

@@ -12,6 +12,6 @@
   @include mq(tb-middle) {
     padding-inline: rclamp(14, 33, 1024, 1920);
     padding-block: rclamp(7.2, 18, 1024, 1920);
-    font-size: rclamp(10, 25, 1024, 1920);
+    font-size: rclamp(13, 25, 1024, 1920);
   }
 }

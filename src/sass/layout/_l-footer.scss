@@ -1,0 +1,61 @@
+@use "../global" as *;
+
+.l-footer {
+  background: #4b5861;
+}
+
+.l-footer__inner {
+  padding-top: rclamp(43, 117, 375, 1023);
+  padding-bottom: rclamp(20, 56, 375, 1023);
+
+  @include mq(tb-middle) {
+    padding-inline: rclamp(184, 345, 1024, 1920);
+    padding-top: rclamp(69, 130, 1024, 1920);
+    padding-bottom: rclamp(101, 190, 1024, 1920);
+  }
+}
+
+.l-footer__group {
+  @include mq(tb-middle) {
+    display: flex;
+  }
+}
+
+.l-footer__menu--area {
+  display: flex;
+  gap: rclamp(47, 129, 375, 1023);
+  justify-content: center;
+}
+
+.l-footer__menuBox {
+  display: flex;
+  flex-direction: column;
+  gap: rclamp(26, 70, 375, 1023);
+
+  @include mq(tb-middle) {
+    gap: rclamp(26, 48, 1024, 1920);
+  }
+}
+
+.l-footer__menu {
+  font-size: rclamp(13, 37, 375, 1023);
+  font-weight: 500;
+  color: $white;
+
+  &:hover {
+    text-decoration: underline 1px;
+    text-decoration-color: $white;
+    text-underline-offset: 10px;
+    cursor: pointer;
+  }
+}
+
+.l-footer__image {
+  margin-top: rclamp(24, 66, 375, 1023);
+  max-width: rclamp(101, 275, 375, 1023);
+  margin-inline: auto;
+
+  @include mq(tb-middle) {
+    margin-top: 0;
+  }
+}
