@@ -4,7 +4,7 @@
   padding: rclamp(61, 165, 375, 1023) rclamp(77, 209, 375, 1023) rclamp(102, 278, 375, 1023);
 
   @include mq(tb-middle) {
-    padding: rclamp(60, 112, 1024, 1920) rclamp(142, 266, 1024, 1920) rclamp(138, 258, 1024, 1920);
+    padding: rclamp(0, 0, 1024, 1920) rclamp(142, 266, 1024, 1920) rclamp(138, 258, 1024, 1920);
   }
 }
 
@@ -24,13 +24,14 @@
 
   @include mq(tb-middle) {
     grid-template-columns: repeat(3, 1fr);
-    row-gap: rclamp(47, 88, 1024, 1920);
-    column-gap: rclamp(95, 179, 1024, 1920);
+    row-gap: rclamp(99, 88, 1024, 1920);
+    column-gap: rclamp(47, 88, 1024, 1920);
   }
 }
 
 .p-sns__box {
   transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  color: $text-color;
 
   @include mq(tb-middle) {
     padding-block: rclamp(11, 21, 1024, 1920);
@@ -45,19 +46,19 @@
   }
 }
 
-.p-sns__contents {
-  &:nth-of-type(2),
-  &:nth-of-type(3) {
-    .p-sns__thumb {
-      img {
-        max-width: rclamp(61, 165, 375, 1023);
+.icon-instagram,
+.icon-x {
+  width: rclamp(61, 165, 375, 1023);
+  height: auto;
 
-        @include mq(tb-middle) {
-          max-width: auto;
-        }
-      }
-    }
+  @include mq(tb-middle) {
+    width: rclamp(60, 113, 1024, 1920);
+    height: auto;
   }
+}
+
+.icon-instagram,
+.icon-x {
 }
 
 .p-sns__thumb {

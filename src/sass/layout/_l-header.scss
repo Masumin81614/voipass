@@ -15,6 +15,7 @@
     .l-header__inner {
       @include mq(tb-middle) {
         padding-block: rclamp(9, 18, 1024, 1920);
+        gap: rclamp(60, 120, 1024, 1920);
       }
     }
     .l-header__nav {

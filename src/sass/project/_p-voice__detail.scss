@@ -9,6 +9,7 @@
 
   @include mq(tb-middle) {
     padding-inline: rclamp(99, 185, 1024, 1920);
+    padding-top: 0;
   }
 }
 
@@ -136,6 +137,10 @@
   font-size: rclamp(21, 58, 375, 1023);
   font-weight: 400;
   text-align: center;
+
+  @include mq(tb-middle) {
+    font-size: rclamp(21, 40, 1024, 1920);
+  }
 }
 
 .voice__lead--textBox {

@@ -6,6 +6,10 @@
 .p-voice__summary {
   padding-top: rclamp(65, 178, 375, 1023);
   padding-bottom: rclamp(72, 197, 375, 1023);
+
+  @include mq(tb-middle) {
+    padding-top: 0;
+  }
 }
 
 .voice__summary--group {
