@@ -14,7 +14,7 @@
 }
 
 .inst-heading {
-  font-size: rclamp(50, 146, 375, 1023);
+  font-size: rclamp(50, 130, 375, 1023);
 
   @include mq(tb-middle) {
     font-size: rclamp(101, 189, 1024, 1920);
@@ -28,7 +28,7 @@
   flex-direction: column;
   gap: rclamp(50, 136, 375, 1023);
 
-  @include mq(tb-small) {
+  @include mq(tb-middle) {
     padding-inline: calc(80px - 20px);
     flex-direction: row;
     gap: rclamp(57, 106, 1024, 1920);

@@ -140,8 +140,11 @@
 
 .p-result__btn {
   margin-top: rclamp(59, 161, 375, 1023);
+  max-width: rclamp(336, 916, 375, 1023);
+  margin-inline: auto;
 
   @include mq(tb-middle) {
     margin-top: rclamp(70, 95, 1024, 1920);
+    max-width: rclamp(380, 713, 1024, 1920);
   }
 }

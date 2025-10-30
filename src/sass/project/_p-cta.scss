@@ -59,19 +59,36 @@
   max-width: rclamp(261, 712, 375, 1023);
   background: $white;
   padding-block: rclamp(19, 51, 375, 1023);
-  padding-inline: rclamp(21, 58, 375, 1023);
+  padding-inline: rclamp(21, 50, 375, 1023);
   margin-inline: auto;
 
   @include mq(tb-middle) {
     margin-top: rclamp(20, 50, 1024, 1920);
+    max-width: rclamp(260, 487, 1024, 1920);
+    padding-block: rclamp(19, 35, 1024, 1920);
+    padding-inline: rclamp(21, 40, 1024, 1920);
   }
 
   a {
-    font-size: rclamp(16, 44, 375, 1023);
+    font-size: rclamp(16, 40, 375, 1023);
     font-weight: 500;
     display: flex;
     gap: rclamp(17, 47, 375, 1023);
     justify-content: center;
     align-items: center;
+
+    @include mq(tb-middle) {
+      font-size: rclamp(16, 30, 1024, 1920);
+      gap: rclamp(11, 21, 1024, 1920);
+    }
+  }
+
+  i {
+    transition: transform 0.5s ease;
+  }
+  &:hover {
+    i {
+      transform: translateX(6px);
+    }
   }
 }

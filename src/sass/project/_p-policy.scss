@@ -64,14 +64,13 @@
 }
 
 .p-policy__listBox {
-  padding-left: 0 !important;
-  margin-left: 0 !important;
+  padding-left: rclamp(20, 54, 375, 1023) !important;
+  margin-left: 0;
   list-style-position: outside;
   list-style-type: decimal;
 }
 
 .p-policy__list {
-  padding-left: rclamp(13, 35, 375, 1023);
   margin-left: 0;
 }
 

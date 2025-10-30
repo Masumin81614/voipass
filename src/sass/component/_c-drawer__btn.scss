@@ -14,4 +14,8 @@
     padding-block: rclamp(7.2, 18, 1024, 1920);
     font-size: rclamp(13, 25, 1024, 1920);
   }
+
+  &:hover {
+    color: #93a8b8;
+  }
 }

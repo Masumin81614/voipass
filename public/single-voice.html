@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
     <!-- <meta name="robots" content="follow"> -->
-    <meta name="description" content="ボイパスで声の仕事を獲得した受講生の生の声をご紹介。未経験からナレーターとして副業で活躍する方、在宅ワークを叶えた方などのリアルな体験談が満載です。" />
+    <meta name="description" content="在宅・副業で輝きたい方必見。ボイパスは特別なスキル不要、未経験から最短1日で声の仕事（ナレーター等）を可能にするスクールです。スキルアップだけではなく案件獲得までの独自メソッドを公開中。さらに無期限アフターサポート付き。" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100..900&family=Shippori+Mincho&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_right" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.min.css" />
     <script>
       (function (d) {
@@ -42,20 +46,20 @@
         s.parentNode.insertBefore(tk, s);
       })(document);
     </script>
-    <title>ボイパスの評判・口コミ｜受講生の声一覧｜在宅・副業成功事例</title>
+    <title>ボイパス｜未経験から1日で声を仕事に！実践＆体験型ボイススクール</title>
   </head>
   <body class="l-voice__pass">
     <header class="l-header">
       <div class="l-header__inner l-inner">
-        <a href="" class="l-header__logo"
+        <a href="index.html" class="l-header__logo"
           ><h1><img src="./img/img_logo.webp" alt="未経験からでもたった1日であなたの声が 仕事になるボイパス" /></h1
         ></a>
         <nav class="l-header__nav">
           <ul class="l-header__lists">
-            <li class="l-header__list"><a href="#">ホーム</a></li>
-            <li class="l-header__list"><a href="#voice">受講生の声</a></li>
-            <li class="l-header__list"><a href="#sns">各種SNS</a></li>
-            <li class="l-header__list"><a href="#voice">無料コラム</a></li>
+            <li class="l-header__list"><a href="index.html">ホーム</a></li>
+            <li class="l-header__list"><a href="single-voice.html">受講生の声</a></li>
+            <li class="l-header__list"><a href="page-sns.html">各種SNS</a></li>
+            <li class="l-header__list"><a href="page-voice.html">無料コラム</a></li>
           </ul>
           <div class="l-header__btnBox">
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSmvkkCt8gIAwsLeNZDHGo7wofPZ7TVecL8gecO5IE43aIvA/viewform" class="c-drawer__btn">お問い合わせ</a>
@@ -68,15 +72,17 @@
       <span class="p-drawer__icon--bar"></span>
       <span class="p-drawer__icon--bar"></span>
       <span class="p-drawer__icon--bar"></span>
+      <span class="p-drawer__title">MENU</span>
+      <span class="p-drawer__title2">CLOSE</span>
     </button>
 
     <div class="p-drawer">
       <div class="p-drawer__body">
         <ul class="p-drawer__lists">
-          <li class="p-drawer__list"><a href="#">ホーム</a></li>
-          <li class="p-drawer__list"><a href="#voice">受講生の声</a></li>
-          <li class="p-drawer__list"><a href="#sns">各種SNS</a></li>
-          <li class="p-drawer__list"><a href="#voice">無料コラム</a></li>
+          <li class="p-drawer__list"><a href="index.html">ホーム</a></li>
+          <li class="p-drawer__list"><a href="single-voice.html">受講生の声</a></li>
+          <li class="p-drawer__list"><a href="page-sns.html">各種SNS</a></li>
+          <li class="p-drawer__list"><a href="page-voice.html">無料コラム</a></li>
         </ul>
         <div class="l-header__btnBox">
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSmvkkCt8gIAwsLeNZDHGo7wofPZ7TVecL8gecO5IE43aIvA/viewform" class="c-drawer__btn">お問い合わせ</a>
@@ -85,7 +91,7 @@
       </div>
     </div>
     <div class="padding-adju"></div>
-    <section class="p-voice__summary">
+    <section id="voice" class="p-voice__summary">
       <div class="voice__summary--inner">
         <div class="c-heading">
           <h2 class="c-heading__main grad-heading voice-heading">VOICE</h2>
@@ -93,60 +99,60 @@
         </div>
         <div class="u-hidden-pc">
           <div class="voice__summary--group">
-            <div class="voice__summary--box">
+            <a href="page-voice.html" class="voice__summary--box">
               <div class="voice__summary--thumbnail"><img src="./img/img_thumbnail.webp" alt="サムネイル" /></div>
               <h3 class="voice__summary--title">見出しが入ります見出しが入ります見出しが入ります</h3>
               <p class="voice__summary--name">（A・Yさん　XX歳）</p>
-            </div>
-            <div class="voice__summary--box">
+            </a>
+            <a href="page-voice.html" class="voice__summary--box">
               <div class="voice__summary--thumbnail"><img src="./img/img_thumbnail.webp" alt="サムネイル" /></div>
               <h3 class="voice__summary--title">見出しが入ります見出しが入ります見出しが入ります</h3>
               <p class="voice__summary--name">（A・Yさん　XX歳）</p>
-            </div>
-            <div class="voice__summary--box">
+            </a>
+            <a href="page-voice.html" class="voice__summary--box">
               <div class="voice__summary--thumbnail"><img src="./img/img_thumbnail.webp" alt="サムネイル" /></div>
               <h3 class="voice__summary--title">見出しが入ります見出しが入ります見出しが入ります</h3>
               <p class="voice__summary--name">（A・Yさん　XX歳）</p>
-            </div>
+            </a>
           </div>
         </div>
         <div class="u-hidden-sp">
           <div class="voice__summary--group">
-            <div class="voice__summary--box">
+            <a href="page-voice.html" class="voice__summary--box">
               <div class="voice__summary--thumbnail"><img src="./img/img_thumbnail.webp" alt="サムネイル" /></div>
               <h3 class="voice__summary--title">見出しが入ります見出しが入ります見出しが入ります</h3>
               <p class="voice__summary--name">（A・Yさん　XX歳）</p>
-            </div>
-            <div class="voice__summary--box">
+            </a>
+            <a href="page-voice.html" class="voice__summary--box">
               <div class="voice__summary--thumbnail"><img src="./img/img_thumbnail.webp" alt="サムネイル" /></div>
               <h3 class="voice__summary--title">見出しが入ります見出しが入ります見出しが入ります</h3>
               <p class="voice__summary--name">（A・Yさん　XX歳）</p>
-            </div>
-            <div class="voice__summary--box">
+            </a>
+            <a href="page-voice.html" class="voice__summary--box">
               <div class="voice__summary--thumbnail"><img src="./img/img_thumbnail.webp" alt="サムネイル" /></div>
               <h3 class="voice__summary--title">見出しが入ります見出しが入ります見出しが入ります</h3>
               <p class="voice__summary--name">（A・Yさん　XX歳）</p>
-            </div>
-            <div class="voice__summary--box">
+            </a>
+            <a href="page-voice.html" class="voice__summary--box">
               <div class="voice__summary--thumbnail"><img src="./img/img_thumbnail.webp" alt="サムネイル" /></div>
               <h3 class="voice__summary--title">見出しが入ります見出しが入ります見出しが入ります</h3>
               <p class="voice__summary--name">（A・Yさん　XX歳）</p>
-            </div>
-            <div class="voice__summary--box">
+            </a>
+            <a href="page-voice.html" class="voice__summary--box">
               <div class="voice__summary--thumbnail"><img src="./img/img_thumbnail.webp" alt="サムネイル" /></div>
               <h3 class="voice__summary--title">見出しが入ります見出しが入ります見出しが入ります</h3>
               <p class="voice__summary--name">（A・Yさん　XX歳）</p>
-            </div>
-            <div class="voice__summary--box">
+            </a>
+            <a href="page-voice.html" class="voice__summary--box">
               <div class="voice__summary--thumbnail"><img src="./img/img_thumbnail.webp" alt="サムネイル" /></div>
               <h3 class="voice__summary--title">見出しが入ります見出しが入ります見出しが入ります</h3>
               <p class="voice__summary--name">（A・Yさん　XX歳）</p>
-            </div>
+            </a>
           </div>
         </div>
         <div class="p-voice__pagination">
           <div class="voice__pagination--box">
-            <a href="" class="voice__pagination--arrowL"><span class="material-symbols-outlined"> arrow_left_alt </span></a>
+            <a href="" class="voice__pagination--arrowL"><i class="fa-solid fa-arrow-left"></i></a>
             <a href="" class="voice__pagination--num">1</a>
             <a href="" class="voice__pagination--num">2</a>
             <a href="" class="voice__pagination--num">3</a>
@@ -154,7 +160,7 @@
             <a href="" class="voice__pagination--num">5</a>
             <a href="" class="voice__pagination--dot">⋯</a>
             <a href="" class="voice__pagination--num">30</a>
-            <a href="" class="voice__pagination--arrowR"> <span class="material-symbols-outlined"> arrow_right_alt </span> </a>
+            <a href="" class="voice__pagination--arrowR"> <i class="fa-solid fa-arrow-right"></i> </a>
           </div>
         </div>
       </div>
@@ -188,10 +194,10 @@
         <div class="u-hidden-sp">
           <div class="l-footer__group">
             <div class="l-footer__menuBox">
-              <a href="" class="l-footer__menu">ホーム</a>
-              <a href="" class="l-footer__menu">受講生の声</a>
-              <a href="" class="l-footer__menu">各種SNS</a>
-              <a href="" class="l-footer__menu">無料コラム</a>
+              <a href="index.html" class="l-footer__menu">ホーム</a>
+              <a href="single-voice.html" class="l-footer__menu">受講生の声</a>
+              <a href="page-sns.html" class="l-footer__menu">各種SNS</a>
+              <a href="page-voice.html" class="l-footer__menu">無料コラム</a>
             </div>
             <div class="l-footer__image">
               <img src="./img/img_footerLogo-pc.webp" alt="" />
@@ -206,14 +212,14 @@
           <div class="l-footer__group">
             <div class="l-footer__menu--area">
               <div class="l-footer__menuBox">
-                <a href="" class="l-footer__menu">ホーム</a>
-                <a href="" class="l-footer__menu">受講生の声</a>
-                <a href="" class="l-footer__menu">各種SNS</a>
-                <a href="" class="l-footer__menu">無料コラム</a>
+                <a href="index.html" class="l-footer__menu">ホーム</a>
+                <a href="single-voice.html" class="l-footer__menu">受講生の声</a>
+                <a href="page-sns.html" class="l-footer__menu">各種SNS</a>
+                <a href="page-voice.html" class="l-footer__menu">無料コラム</a>
               </div>
               <div class="l-footer__menuBox">
-                <a href="" class="l-footer__menu">通常のお問い合わせ</a>
-                <a href="" class="l-footer__menu">声の発注を無料相談</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSmvkkCt8gIAwsLeNZDHGo7wofPZ7TVecL8gecO5IE43aIvA/viewform" class="l-footer__menu">通常のお問い合わせ</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqKkOEW_LDJCXJ3RanfBDePw2A3NivjDxT6XIA-UZN9xn32Q/viewform" class="l-footer__menu">声の発注を無料相談</a>
               </div>
             </div>
             <div class="l-footer__image">

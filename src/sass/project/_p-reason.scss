@@ -2,9 +2,13 @@
 
 .p-reason {
   padding-block: rclamp(43, 117, 375, 1023);
-
   @include mq(tb-middle) {
     padding-top: rclamp(71, 133, 1024, 1920);
+  }
+}
+
+.p-reason__contents {
+  @include mq(tb-middle) {
     padding-inline: rclamp(47, 88, 1024, 1920);
   }
 }
@@ -72,6 +76,7 @@
 .p-reason__item--title {
   font-weight: 500;
   line-height: 1.5;
+  font-size: rclamp(19, 51, 375, 1023);
 
   @include mq(tb-middle) {
     font-size: rclamp(19, 35, 1024, 1920);
@@ -79,10 +84,6 @@
 
   .accent-color {
     font-weight: bold;
-  }
-
-  .small-text {
-    font-weight: 400;
   }
 }
 

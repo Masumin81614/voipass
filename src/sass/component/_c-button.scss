@@ -1,24 +1,27 @@
 @use "../global" as *;
 
 .c-button {
-  max-width: 340px;
   margin-inline: auto;
-  padding-block: 15px;
-  padding-inline: 20px;
+  padding-block: rclamp(16, 25, 375, 1023);
+  padding-inline: rclamp(51, 139, 375, 1023);
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 30px;
+  border-radius: 50px;
   color: white;
   text-align: center;
   font-family: $font-face-ja;
-  font-size: 1.4rem;
+  font-size: rclamp(21, 40, 375, 786);
   font-weight: bold;
   text-decoration: none;
   text-align: center;
   border: none;
   cursor: pointer;
   position: relative;
+
+  @include mq(tb-small) {
+    border-radius: 70px;
+  }
 
   @include mq(tb-middle) {
     padding-block: 31px;
@@ -79,6 +82,11 @@
   z-index: 3;
   top: -27px;
   -webkit-transform: scale(0.95, 0.5);
+
+  @include mq(tb-small) {
+    top: -48px;
+    border-radius: 75px;
+  }
 
   @include mq(tb-middle) {
     top: rclamp(-20, -34, 1024, 1920);

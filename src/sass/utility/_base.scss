@@ -12,7 +12,7 @@
 }
 
 .small-text {
-  font-size: rclamp(12, 29, 375, 1023);
+  font-size: rclamp(12, 20, 375, 1023);
 
   @include mq(tb-middle) {
     font-size: rclamp(11, 20, 1024, 1920);

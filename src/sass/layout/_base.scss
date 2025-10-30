@@ -17,7 +17,7 @@
   padding-top: rclamp(27, 73, 375, 1023);
 
   @include mq(tb-middle) {
-    padding-inline: rclamp(83, 155, 1024, 1920);
+    padding-inline: rclamp(50, 155, 1024, 1920);
   }
 }
 

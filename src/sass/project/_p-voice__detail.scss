@@ -58,6 +58,10 @@
 
 .p-voice__detail--image {
   box-shadow: 0px 0px 15px -5px #777777;
+
+  @include mq(tb-middle) {
+    max-width: rclamp(341, 640, 1024, 1920);
+  }
 }
 
 .voice__personal {
@@ -156,6 +160,28 @@
 }
 
 .p-voice__detail--btn {
+  max-width: rclamp(329, 899, 375, 1023);
+  width: 100%;
+  margin-inline: auto;
+  border-radius: 40px;
+
+  &:has(.green-btn) {
+    background: linear-gradient(90deg, rgba(103, 176, 205, 1) 0%, rgba(159, 208, 223, 1) 100%);
+  }
+
+  &:has(.pink-btn) {
+    background: linear-gradient(90deg, rgba(242, 154, 185, 1) 0%, rgba(234, 185, 205, 1) 100%);
+  }
+
+  @include mq(tb-small) {
+    border-radius: 80px;
+  }
+
+  @include mq(tb-middle) {
+    border-radius: 64px;
+    max-width: rclamp(380, 713, 1024, 1920);
+  }
+
   .c-button {
     &::after {
       right: rclamp(5, 15, 375, 1023);

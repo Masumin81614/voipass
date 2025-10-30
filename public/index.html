@@ -58,9 +58,9 @@
           <nav class="l-header__nav">
             <ul class="l-header__lists">
               <li class="l-header__list"><a href="#">ホーム</a></li>
-              <li class="l-header__list"><a href="#voice">受講生の声</a></li>
-              <li class="l-header__list"><a href="#sns">各種SNS</a></li>
-              <li class="l-header__list"><a href="#voice">無料コラム</a></li>
+              <li class="l-header__list"><a href="single-voice.html">受講生の声</a></li>
+              <li class="l-header__list"><a href="page-sns.html">各種SNS</a></li>
+              <li class="l-header__list"><a href="page-voice.html">無料コラム</a></li>
             </ul>
             <div class="l-header__btnBox">
               <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSmvkkCt8gIAwsLeNZDHGo7wofPZ7TVecL8gecO5IE43aIvA/viewform" class="c-drawer__btn">お問い合わせ</a>
@@ -81,9 +81,9 @@
         <div class="p-drawer__body">
           <ul class="p-drawer__lists">
             <li class="p-drawer__list"><a href="#">ホーム</a></li>
-            <li class="p-drawer__list"><a href="#voice">受講生の声</a></li>
-            <li class="p-drawer__list"><a href="#sns">各種SNS</a></li>
-            <li class="p-drawer__list"><a href="#voice">無料コラム</a></li>
+            <li class="p-drawer__list"><a href="single-voice.html">受講生の声</a></li>
+            <li class="p-drawer__list"><a href="page-sns.html">各種SNS</a></li>
+            <li class="p-drawer__list"><a href="page-voice.html">無料コラム</a></li>
           </ul>
           <div class="l-header__btnBox">
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSmvkkCt8gIAwsLeNZDHGo7wofPZ7TVecL8gecO5IE43aIvA/viewform" class="c-drawer__btn">お問い合わせ</a>
@@ -96,7 +96,9 @@
         <div class="p-fv__inner l-inner">
           <div class="p-fv__group">
             <div class="p-fv__heading">
-              <p class="p-fv__head"><span class="fv__head--title1">未経験</span>からでも <br class="u-hidden-pc" />たった <span class="fv__head--title2">1</span>日で</p>
+              <p class="p-fv__head">
+                <span class="fv__head--title1">未経験</span> <span class="fv__head--titleMain">からでも <br class="u-hidden-pc" />たった</span> <span class="fv__head--title2">1</span>日で
+              </p>
               <p class="p-fv__head">
                 <span class="fv__head--title3"
                   >あなたの声が <br class="u-hidden-pc" />
@@ -110,19 +112,19 @@
             <div class="p-fv__bta">
               <div class="p-fv__ornaments">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="./img/img_fvmedal1-pc.webp" />
+                  <source media="(min-width: 1024px)" srcset="./img/img_fvmedal1-pc.webp" />
                   <img src="./img/img_fvmedal1-sp.webp" alt="案件獲得率95%以上" />
                 </picture>
                 <picture>
-                  <source media="(min-width: 768px)" srcset="./img/img_fvmedal2-pc.webp" />
+                  <source media="(min-width: 1024px)" srcset="./img/img_fvmedal2-pc.webp" />
                   <img src="./img/img_fvmedal2-sp.webp" alt="現役プロ講師がサポートを担当" />
                 </picture>
                 <picture>
-                  <source media="(min-width: 768px)" srcset="./img/img_fvmedal3-pc.webp" />
+                  <source media="(min-width: 1024px)" srcset="./img/img_fvmedal3-pc.webp" />
                   <img src="./img/img_fvmedal3-sp.webp" alt="声サンプルも1日で完成" />
                 </picture>
                 <picture>
-                  <source media="(min-width: 768px)" srcset="./img/img_fvmedal4-pc.webp" />
+                  <source media="(min-width: 1024px)" srcset="./img/img_fvmedal4-pc.webp" />
                   <img src="./img/img_fvmedal4-sp.webp" alt="受講生200名突破" />
                 </picture>
               </div>
@@ -133,7 +135,7 @@
           </div>
           <div class="p-fv__image">
             <picture>
-              <source media="(min-width: 768px)" srcset="./img/img_top-model.webp" />
+              <source media="(min-width: 1024px)" srcset="./img/img_top-model.webp" />
               <img src="./img/img_top-model_sp.webp" alt="ヘッドホンをする女性" />
             </picture>
           </div>
@@ -261,26 +263,16 @@
           </div>
         </div>
       </section>
-      <section id="reason" class="p-reason l-padding l-inner">
-        <div class="p-reason__inner border-box l-contents__inner">
-          <div class="c-heading">
-            <h2 class="c-heading__main grad-heading reason-heading">REASON</h2>
-            <p class="c-heading__sub">ボイパスが選ばれる4つの理由</p>
-          </div>
-          <ul class="p-reason__itemBox">
-            <li class="p-reason__item">
-              <div class="u-hidden-pc">
-                <div class="p-reason__item--head">
-                  <p class="p-reason__item--num">01</p>
-                  <h3 class="p-reason__item--title">
-                    特別な機材や
-                    <span class="accent-color">スキルが不要</span>
-                  </h3>
-                </div>
-              </div>
-              <div class="p-reason__item--image"><img src="./img/img_reason1.webp" alt="家庭スタジオ" /></div>
-              <div class="p-reason__item--textBox">
-                <div class="u-hidden-sp">
+      <section id="reason" class="p-reason">
+        <div class="p-reason__inner l-inner l-padding">
+          <div class="p-reason__contents border-box l-contents__inner">
+            <div class="c-heading">
+              <h2 class="c-heading__main grad-heading reason-heading">REASON</h2>
+              <p class="c-heading__sub">ボイパスが選ばれる4つの理由</p>
+            </div>
+            <ul class="p-reason__itemBox">
+              <li class="p-reason__item">
+                <div class="u-hidden-pc">
                   <div class="p-reason__item--head">
                     <p class="p-reason__item--num">01</p>
                     <h3 class="p-reason__item--title">
@@ -289,25 +281,25 @@
                     </h3>
                   </div>
                 </div>
-                <p class="p-reason__item--text">
-                  ボイパスに参加される方のほとんどが声や演技のレッスンを受けたことがない初心者の方ばかり！
-                  <span class="yellow-line semi-text">あなたの声は世界にたった1つ。立派な武器になります！</span> マイクは1万円台のものでOK！しかも防音ブースは不要！雑音さえ気をつければ、リビングや自分のお部屋で収録できます。
-                </p>
-              </div>
-            </li>
-            <li class="p-reason__item">
-              <div class="u-hidden-pc">
-                <div class="p-reason__item--head">
-                  <p class="p-reason__item--num">02</p>
-                  <h3 class="p-reason__item--title">
-                    パソコンが
-                    <span class="accent-color">苦手でもOK</span>
-                  </h3>
+                <div class="p-reason__item--image"><img src="./img/img_reason1.webp" alt="家庭スタジオ" /></div>
+                <div class="p-reason__item--textBox">
+                  <div class="u-hidden-sp">
+                    <div class="p-reason__item--head">
+                      <p class="p-reason__item--num">01</p>
+                      <h3 class="p-reason__item--title">
+                        特別な機材や
+                        <span class="accent-color">スキルが不要</span>
+                      </h3>
+                    </div>
+                  </div>
+                  <p class="p-reason__item--text">
+                    ボイパスに参加される方のほとんどが声や演技のレッスンを受けたことがない初心者の方ばかり！
+                    <span class="yellow-line semi-text">あなたの声は世界にたった1つ。立派な武器になります！</span> マイクは1万円台のものでOK！しかも防音ブースは不要！雑音さえ気をつければ、リビングや自分のお部屋で収録できます。
+                  </p>
                 </div>
-              </div>
-              <div class="p-reason__item--image"><img src="./img/img_reason2.webp" alt="パソコンの前で笑顔の女性" /></div>
-              <div class="p-reason__item--textBox">
-                <div class="u-hidden-sp">
+              </li>
+              <li class="p-reason__item">
+                <div class="u-hidden-pc">
                   <div class="p-reason__item--head">
                     <p class="p-reason__item--num">02</p>
                     <h3 class="p-reason__item--title">
@@ -316,71 +308,83 @@
                     </h3>
                   </div>
                 </div>
-                <p class="p-reason__item--text">
-                  <span class="yellow-line semi-text"> ボイパスのワークショップ参加後に招待する無期限のアフターサポートの中で、パソコンや編集ツールの使い方を丁寧に解説します。 </span><br />
-                  アフターサポートでは、講師や仲間に質問し放題！編集で行きづまっても、気軽に教えてもらえる環境が整っています。どうしても難しい場合は、得意な仲間に依頼することもできます！
-                </p>
-              </div>
-            </li>
-            <li class="p-reason__item">
-              <div class="u-hidden-pc">
-                <div class="p-reason__item--head">
-                  <p class="p-reason__item--num">03</p>
-                  <h3 class="p-reason__item--title">
-                    最短でワークショップ終了後に
-                    <span class="accent-color">初案件の実績あり</span>
-                  </h3>
+                <div class="p-reason__item--image"><img src="./img/img_reason2.webp" alt="パソコンの前で笑顔の女性" /></div>
+                <div class="p-reason__item--textBox">
+                  <div class="u-hidden-sp">
+                    <div class="p-reason__item--head">
+                      <p class="p-reason__item--num">02</p>
+                      <h3 class="p-reason__item--title">
+                        パソコンが
+                        <span class="accent-color">苦手でもOK</span>
+                      </h3>
+                    </div>
+                  </div>
+                  <p class="p-reason__item--text">
+                    <span class="yellow-line semi-text"> ボイパスのワークショップ参加後に招待する無期限のアフターサポートの中で、パソコンや編集ツールの使い方を丁寧に解説します。 </span><br />
+                    アフターサポートでは、講師や仲間に質問し放題！編集で行きづまっても、気軽に教えてもらえる環境が整っています。どうしても難しい場合は、得意な仲間に依頼することもできます！
+                  </p>
                 </div>
-              </div>
-              <div class="p-reason__item--image"><img src="./img/img_reason3.webp" alt="ガッツポーズする女性" /></div>
-              <div class="p-reason__item--textBox">
-                <div class="u-hidden-sp">
+              </li>
+              <li class="p-reason__item">
+                <div class="u-hidden-pc">
                   <div class="p-reason__item--head">
                     <p class="p-reason__item--num">03</p>
                     <h3 class="p-reason__item--title">
-                      最短でワークショップ終了後に <br class="u-hidden-sp" />
+                      最短でワークショップ終了後に
                       <span class="accent-color">初案件の実績あり</span>
                     </h3>
                   </div>
                 </div>
-                <p class="p-reason__item--text">
-                  ワークショップの中で、案件応募にそのまま使えるポートフォリオ音声の制作を行います。アフターサポートでも提案文の書き方やポートフォリオの見せ方も細かくアドバイスするので、手堅く仕事探しができます。
-                  <span class="yellow-line">実際に、未経験の主婦や会社員でも案件獲得を達成！あなたが初めての報酬を得るまでサポートします。</span>
-                </p>
-              </div>
-            </li>
-            <li class="p-reason__item">
-              <div class="u-hidden-pc">
-                <div class="p-reason__item--head">
-                  <p class="p-reason__item--num">04</p>
-                  <h3 class="p-reason__item--title">
-                    ワークショップ参加後 <br class="u-hidden-pc" />
-                    <span class="accent-color">1ヶ月以内</span>の <br class="u-hidden-sp" />
-                    案件獲得率は <span class="accent-color">100％</span>
-                    <span class="small-text">（※マイクなど録音準備が整った方のみ）</span>
-                  </h3>
+                <div class="p-reason__item--image"><img src="./img/img_reason3.webp" alt="ガッツポーズする女性" /></div>
+                <div class="p-reason__item--textBox">
+                  <div class="u-hidden-sp">
+                    <div class="p-reason__item--head">
+                      <p class="p-reason__item--num">03</p>
+                      <h3 class="p-reason__item--title">
+                        最短でワークショップ終了後に <br class="u-hidden-sp" />
+                        <span class="accent-color">初案件の実績あり</span>
+                      </h3>
+                    </div>
+                  </div>
+                  <p class="p-reason__item--text">
+                    ワークショップの中で、案件応募にそのまま使えるポートフォリオ音声の制作を行います。アフターサポートでも提案文の書き方やポートフォリオの見せ方も細かくアドバイスするので、手堅く仕事探しができます。
+                    <span class="yellow-line">実際に、未経験の主婦や会社員でも案件獲得を達成！あなたが初めての報酬を得るまでサポートします。</span>
+                  </p>
                 </div>
-              </div>
-              <div class="p-reason__item--image"><img src="./img/img_reason4.webp" alt="パソコンの前でスマホを触る女性" /></div>
-              <div class="p-reason__item--textBox">
-                <div class="u-hidden-sp">
+              </li>
+              <li class="p-reason__item">
+                <div class="u-hidden-pc">
                   <div class="p-reason__item--head">
                     <p class="p-reason__item--num">04</p>
                     <h3 class="p-reason__item--title">
                       ワークショップ参加後 <br class="u-hidden-pc" />
                       <span class="accent-color">1ヶ月以内</span>の <br class="u-hidden-sp" />
-                      案件獲得率は <span class="accent-color">100％</span><br class="u-hidden-sp" />
+                      案件獲得率は <span class="accent-color">100％</span>
                       <span class="small-text">（※マイクなど録音準備が整った方のみ）</span>
                     </h3>
                   </div>
                 </div>
-                <p class="p-reason__item--text">
-                  アフターサポートがあっても、仕事獲得できるか不安なあなたも大丈夫！<span class="yellow-line semi-text">ボイパス主催が経営する会社からの発注や、自分自身でも案件獲得できるように、クラウドソーシングサイトで使えるテンプレも用意しています。</span><br />
-                  また、ボイパスメンバーと企業をマッチングするサイトも準備していて、案件獲得につながるよう日々改善をしています。このように継続して仕事をもらえる環境があるので、安心して飛び込んできてください。
-                </p>
-              </div>
-            </li>
-          </ul>
+                <div class="p-reason__item--image"><img src="./img/img_reason4.webp" alt="パソコンの前でスマホを触る女性" /></div>
+                <div class="p-reason__item--textBox">
+                  <div class="u-hidden-sp">
+                    <div class="p-reason__item--head">
+                      <p class="p-reason__item--num">04</p>
+                      <h3 class="p-reason__item--title">
+                        ワークショップ参加後 <br class="u-hidden-pc" />
+                        <span class="accent-color">1ヶ月以内</span>の <br class="u-hidden-sp" />
+                        案件獲得率は <span class="accent-color">100％</span><br class="u-hidden-sp" />
+                        <span class="small-text">（※マイクなど録音準備が整った方のみ）</span>
+                      </h3>
+                    </div>
+                  </div>
+                  <p class="p-reason__item--text">
+                    アフターサポートがあっても、仕事獲得できるか不安なあなたも大丈夫！<span class="yellow-line semi-text">ボイパス主催が経営する会社からの発注や、自分自身でも案件獲得できるように、クラウドソーシングサイトで使えるテンプレも用意しています。</span><br />
+                    また、ボイパスメンバーと企業をマッチングするサイトも準備していて、案件獲得につながるよう日々改善をしています。このように継続して仕事をもらえる環境があるので、安心して飛び込んできてください。
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section id="cast" class="p-cast">
@@ -505,10 +509,10 @@
           <div class="u-hidden-sp">
             <div class="l-footer__group">
               <div class="l-footer__menuBox">
-                <a href="" class="l-footer__menu">ホーム</a>
-                <a href="" class="l-footer__menu">受講生の声</a>
-                <a href="" class="l-footer__menu">各種SNS</a>
-                <a href="" class="l-footer__menu">無料コラム</a>
+                <a href="index.html" class="l-footer__menu">ホーム</a>
+                <a href="single-voice.html" class="l-footer__menu">受講生の声</a>
+                <a href="page-sns.html" class="l-footer__menu">各種SNS</a>
+                <a href="page-voice.html" class="l-footer__menu">無料コラム</a>
               </div>
               <div class="l-footer__image">
                 <img src="./img/img_footerLogo-pc.webp" alt="" />
@@ -523,14 +527,14 @@
             <div class="l-footer__group">
               <div class="l-footer__menu--area">
                 <div class="l-footer__menuBox">
-                  <a href="" class="l-footer__menu">ホーム</a>
-                  <a href="" class="l-footer__menu">受講生の声</a>
-                  <a href="" class="l-footer__menu">各種SNS</a>
-                  <a href="" class="l-footer__menu">無料コラム</a>
+                  <a href="index.html" class="l-footer__menu">ホーム</a>
+                  <a href="single-voice.html" class="l-footer__menu">受講生の声</a>
+                  <a href="page-sns.html" class="l-footer__menu">各種SNS</a>
+                  <a href="page-voice.html" class="l-footer__menu">無料コラム</a>
                 </div>
                 <div class="l-footer__menuBox">
-                  <a href="" class="l-footer__menu">通常のお問い合わせ</a>
-                  <a href="" class="l-footer__menu">声の発注を無料相談</a>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSmvkkCt8gIAwsLeNZDHGo7wofPZ7TVecL8gecO5IE43aIvA/viewform" class="l-footer__menu">通常のお問い合わせ</a>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqKkOEW_LDJCXJ3RanfBDePw2A3NivjDxT6XIA-UZN9xn32Q/viewform" class="l-footer__menu">声の発注を無料相談</a>
                 </div>
               </div>
               <div class="l-footer__image">

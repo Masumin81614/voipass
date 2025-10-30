@@ -9,7 +9,6 @@
   padding-bottom: rclamp(20, 56, 375, 1023);
 
   @include mq(tb-middle) {
-    padding-inline: rclamp(184, 345, 1024, 1920);
     padding-top: rclamp(69, 130, 1024, 1920);
     padding-bottom: rclamp(101, 190, 1024, 1920);
   }
@@ -18,6 +17,8 @@
 .l-footer__group {
   @include mq(tb-middle) {
     display: flex;
+    gap: rclamp(160, 300, 1024, 1920);
+    justify-content: center;
   }
 }
 
@@ -42,6 +43,10 @@
   font-weight: 500;
   color: $white;
 
+  @include mq(tb-middle) {
+    font-size: rclamp(13, 25, 1024, 1920);
+  }
+
   &:hover {
     text-decoration: underline 1px;
     text-decoration-color: $white;
@@ -56,6 +61,6 @@
   margin-inline: auto;
 
   @include mq(tb-middle) {
-    margin-top: 0;
+    margin: 0;
   }
 }
