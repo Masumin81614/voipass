@@ -1,4 +1,27 @@
 @use "../global" as *;
 
-.l-inner {
+.accent-color {
+  color: $accent-text-red;
+}
+
+.semi-text {
+  font-weight: 500;
+}
+.yellow-line {
+  background: linear-gradient(transparent 0, #fffeaa 0);
+}
+
+.small-text {
+  font-size: rclamp(12, 20, 375, 1023);
+
+  @include mq(tb-middle) {
+    font-size: rclamp(11, 20, 1024, 1920);
+  }
+}
+
+.border-box {
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent;
+  border-image: $main-gradation 10 / 10px;
 }

@@ -7,10 +7,42 @@
   left: 0;
   width: 100%;
   height: auto;
+
+  &.js-scroll {
+    @include mq(tb-middle) {
+      background: rgba(217, 232, 243, 0.5);
+    }
+    .l-header__inner {
+      @include mq(tb-middle) {
+        padding-block: rclamp(9, 18, 1024, 1920);
+        gap: rclamp(60, 120, 1024, 1920);
+      }
+    }
+    .l-header__nav {
+      @include mq(tb-middle) {
+        margin-top: 0;
+      }
+    }
+    .l-header__logo {
+      @include mq(tb-middle) {
+        max-width: rclamp(101, 190, 1024, 1920);
+      }
+    }
+    .l-header__list {
+      @include mq(tb-middle) {
+        padding-top: 0;
+      }
+    }
+    .c-drawer__btn {
+      @include mq(tb-middle) {
+        padding-block: rclamp(5, 10, 1024, 1920);
+      }
+    }
+  }
 }
 .l-header__inner {
-  padding-inline: 28px;
-  padding-top: 20px;
+  padding-inline: rclamp(35, 95, 375, 1023);
+  padding-top: rclamp(21, 58, 375, 1023);
 
   @include mq(tb-middle) {
     display: flex;
@@ -36,10 +68,21 @@
 
 .l-header__list {
   color: $accent-text-blue;
-  font-weight: bold;
-  font-size: rclamp(10, 25, 1024, 1920);
-  font-family: $font-face-ja;
+  font-weight: 500;
   flex-shrink: 0;
+
+  a {
+    &:hover {
+      text-decoration: underline 1px;
+      text-decoration-color: $accent-text-blue;
+      text-underline-offset: 10px;
+      cursor: pointer;
+    }
+  }
+
+  @include mq(tb-middle) {
+    font-size: rclamp(13, 25, 1024, 1920);
+  }
 }
 
 .l-header__logo {

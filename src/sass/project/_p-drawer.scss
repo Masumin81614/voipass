@@ -3,8 +3,8 @@
 .p-drawer__icon {
   position: fixed;
   z-index: 102;
-  top: 17px;
-  right: 20px;
+  top: rclamp(21, 58, 375, 1023);
+  right: rclamp(35, 95, 375, 1023);
   width: 60px;
   height: 60px;
   display: flex;
@@ -80,7 +80,7 @@
   height: 100vh;
   padding-block: 88px 40px;
   padding-inline: 34px;
-  background: #d9e8f3;
+  background: rgba(217, 232, 243, 0.5);
   display: flex;
   flex-direction: column;
 }

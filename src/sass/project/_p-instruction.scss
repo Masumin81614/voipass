@@ -1,0 +1,79 @@
+@use "../global" as *;
+
+.p-instruction__inner {
+  padding-inline: 8px;
+  padding-bottom: rclamp(46, 124, 375, 1023);
+
+  @include mq(tb-small) {
+    padding-inline: 20px;
+  }
+
+  @include mq(tb-middle) {
+    padding-inline: rclamp(137, 256, 1024, 1920);
+  }
+}
+
+.inst-heading {
+  font-size: rclamp(50, 130, 375, 1023);
+
+  @include mq(tb-middle) {
+    font-size: rclamp(101, 189, 1024, 1920);
+  }
+}
+
+.p-instruction__itemBox {
+  margin-top: rclamp(20, 56, 375, 1023);
+  padding-inline: calc(29px - 8px);
+  display: flex;
+  flex-direction: column;
+  gap: rclamp(50, 136, 375, 1023);
+
+  @include mq(tb-middle) {
+    padding-inline: calc(80px - 20px);
+    flex-direction: row;
+    gap: rclamp(57, 106, 1024, 1920);
+  }
+
+  @include mq(tb-middle) {
+    padding-inline: 0;
+  }
+}
+
+.p-instruction__item {
+  @include mq(tb-middle) {
+    flex: 1;
+  }
+}
+
+.p-instruction__image {
+  max-width: rclamp(294, 801, 375, 1023);
+  margin-inline: auto;
+
+  @include mq(tb-middle) {
+    max-width: rclamp(350, 657, 1024, 1920);
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.p-instruction__name {
+  margin-top: rclamp(17, 47, 375, 1023);
+  font-size: rclamp(27, 73, 375, 1023);
+
+  @include mq(tb-middle) {
+    font-size: rclamp(27, 50, 1024, 1920);
+  }
+}
+
+.p-instruction__text {
+  margin-top: rclamp(11, 29, 375, 1023);
+  line-height: 1.8;
+  font-size: rclamp(13, 37, 375, 1023);
+
+  @include mq(tb-middle) {
+    font-size: rclamp(13, 25, 1024, 1920);
+    letter-spacing: 0.05px;
+  }
+}

@@ -1,0 +1,29 @@
+@use "../global" as *;
+
+.l-padding {
+  padding-inline: rclamp(10, 26, 375, 1023);
+  padding-bottom: rclamp(46, 124, 375, 1023);
+  padding-top: rclamp(27, 73, 375, 1023);
+
+  @include mq(tb-middle) {
+    padding-inline: rclamp(42, 78, 1024, 1920);
+    padding-bottom: 0;
+  }
+}
+
+.l-contents__inner {
+  padding-inline: rclamp(8, 30, 375, 1023);
+  padding-bottom: rclamp(46, 124, 375, 1023);
+  padding-top: rclamp(27, 73, 375, 1023);
+
+  @include mq(tb-middle) {
+    padding-inline: rclamp(50, 155, 1024, 1920);
+  }
+}
+
+.l-inner {
+  @include mq(tb-middle) {
+    max-width: 1920px;
+    margin-inline: auto;
+  }
+}
