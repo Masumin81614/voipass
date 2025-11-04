@@ -67,7 +67,7 @@
 
   img {
     aspect-ratio: 16 / 9;
-    height: 100%;
+    height: auto;
   }
 }
 
@@ -79,7 +79,7 @@
   }
   img {
     width: 100% !important;
-    height: 100%;
+    height: auto;
     aspect-ratio: 16 / 9;
   }
 }
@@ -95,6 +95,7 @@
 .p-voice__detail--job {
   font-size: rclamp(21, 58, 375, 1023);
   font-weight: 400;
+  white-space: nowrap;
 
   @include mq(tb-middle) {
     font-size: rclamp(21, 40, 1024, 1920);
