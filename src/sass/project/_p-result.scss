@@ -28,6 +28,10 @@
   padding: 0;
 }
 
+.swiper-wrapper {
+  height: auto !important;
+}
+
 /* =============================
    ページネーション (bullets)
 ============================= */
@@ -107,6 +111,19 @@
   @include mq(tb-middle) {
     max-width: 450px;
     padding: rclamp(10, 19, 1024, 1920);
+  }
+}
+
+.card__swiper--image {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
 }
 
