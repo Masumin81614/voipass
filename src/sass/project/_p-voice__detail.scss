@@ -59,9 +59,28 @@
 
 .p-voice__detail--image {
   box-shadow: 0px 0px 15px -5px #777777;
+  max-width: rclamp(274, 748, 375, 1023);
 
   @include mq(tb-middle) {
     max-width: rclamp(341, 640, 1024, 1920);
+  }
+
+  img {
+    aspect-ratio: 16 / 9;
+    height: 100%;
+  }
+}
+
+.p-voice__detail--scape {
+  max-width: rclamp(309, 842, 375, 1023);
+
+  @include mq(tb-middle) {
+    max-width: rclamp(683, 1280, 1024, 1920);
+  }
+  img {
+    width: 100% !important;
+    height: 100%;
+    aspect-ratio: 16 / 9;
   }
 }
 

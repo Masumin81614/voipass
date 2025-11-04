@@ -86,9 +86,17 @@
   flex-direction: column;
   justify-content: center;
 
+  @include mq(tb-middle) {
+    font-size: rclamp(32, 60, 1024, 1920);
+  }
+
   span {
     font-size: rclamp(16, 44, 375, 1023);
     font-weight: normal;
+
+    @include mq(tb-middle) {
+      font-size: rclamp(16, 30, 1024, 1920);
+    }
   }
 }
 

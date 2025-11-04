@@ -84,7 +84,7 @@
   display: flex;
   flex-direction: column;
 }
-.p-drawer__list {
+.p-drawer__lists > li {
   row-gap: 32px;
   margin-bottom: 40px;
   color: $accent-text-blue;

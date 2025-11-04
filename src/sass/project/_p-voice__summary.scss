@@ -79,7 +79,8 @@
   }
 }
 
-.voice__pagination--box {
+.voice__pagination--box,
+.nav-links {
   display: flex;
   gap: rclamp(15, 41, 375, 1023);
   justify-content: center;
@@ -101,7 +102,8 @@
   }
 }
 
-.voice__pagination--num {
+.voice__pagination--num,
+.page-numbers:not(.prev):not(.next) {
   font-size: rclamp(21, 58, 375, 1023);
   width: rclamp(30, 78, 375, 1023);
   height: rclamp(30, 78, 375, 1023);
@@ -113,6 +115,7 @@
   justify-content: center;
   align-items: center;
   aspect-ratio: 1;
+  color: $text-color;
 
   @include mq(tb-middle) {
     font-size: rclamp(21, 40, 1024, 1920);
@@ -135,8 +138,8 @@
   }
 }
 
-.voice__pagination--arrowL,
-.voice__pagination--arrowR {
+.prev,
+.next {
   i {
     font-size: rclamp(12, 34, 375, 1023);
     @include mq(tb-middle) {
