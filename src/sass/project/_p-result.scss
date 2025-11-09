@@ -117,7 +117,9 @@
 
   @include mq(tb-middle) {
     max-width: 450px;
+    max-height: rclamp(240, 450, 1024, 1920);
     padding: rclamp(10, 19, 1024, 1920);
+    height: auto;
   }
 }
 
