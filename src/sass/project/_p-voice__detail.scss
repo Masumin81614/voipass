@@ -134,8 +134,7 @@
 
 .voice__post--text {
   font-size: rclamp(16, 44, 375, 1023);
-  padding-top: rclamp(15, 41, 375, 1023);
-  padding-bottom: rclamp(26, 70, 375, 1023);
+  padding: rclamp(16, 44, 375, 1023);
 
   @include mq(tb-middle) {
     font-size: rclamp(16, 30, 1024, 1920);
