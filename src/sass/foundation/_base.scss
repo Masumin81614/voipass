@@ -9,6 +9,18 @@ body {
   animation: fadeIn 2s ease 0s 1 normal;
   -webkit-animation: fadeIn 2s ease 0s 1 normal;
   overflow-y: scroll;
+
+  &.admin-bar {
+    margin-top: 0 !important;
+
+    .l-header {
+      top: 46px;
+
+      @include mq(tb-middle) {
+        top: 32px;
+      }
+    }
+  }
 }
 
 @keyframes fadeIn {

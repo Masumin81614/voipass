@@ -103,6 +103,7 @@
 
 .p-about__text--last {
   margin-top: rclamp(35, 95, 375, 1023);
+  font-size: rclamp(13, 37, 375, 1023);
 
   @include mq(tb-middle) {
     margin-top: rclamp(33, 62, 1024, 1920);
