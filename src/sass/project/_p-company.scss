@@ -42,15 +42,21 @@
   grid-template-columns: max-content 1fr;
   row-gap: rclamp(20, 54, 375, 1023);
   column-gap: rclamp(52, 142, 375, 1023);
+  padding-left: rclamp(43, 117, 375, 1920);
 
   @include mq(tb-middle) {
     margin-top: rclamp(30, 62, 1024, 1920);
     row-gap: rclamp(11, 20, 1024, 1920);
     column-gap: rclamp(53, 100, 1024, 1920);
+    padding-left: 0;
   }
 }
 
 .p-company__title,
 .p-company__text {
-  font-size: rclamp(13, 25, 1024, 1920);
+  font-size: rclamp(13, 37, 375, 1023);
+
+  @include mq(tb-middle) {
+    font-size: rclamp(13, 25, 1024, 1920);
+  }
 }
